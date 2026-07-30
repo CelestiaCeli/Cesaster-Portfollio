@@ -33,14 +33,14 @@ TODO: some art changes
 
 		<!-- Style Sheets -->
         <link href="../../CSS/MainStyles.css" rel="stylesheet">
-		<link href="../../CSS/Resume/AboutMe.css" rel="stylesheet">
+		<link href="../../CSS/Professional/AboutMe.css" rel="stylesheet">
 
 		<!-- Classes/Objects -->
 		<script src="../../JavaScript/Objects/Fader.js"></script>
 
 		<!-- Main Script Files -->
 		<script src="../../JavaScript/MainScript.js"></script>
-		<script src="../../Javascript/Resume/AboutMe.js"></script>
+		<script src="../../JavaScript/Professional/AboutMe.js"></script>
 
         <title>
             About Me - Felithamity
@@ -53,7 +53,31 @@ TODO: some art changes
                 Celeste
             </h1>
 		</section>
+	<!--
+		<header>
+			<a href="Extended.html">
+				<h3>
+					Portfolio
+				</h3>
+			</a>
+			<a href="AboutMe.html">
+				<h3>
+					About Me
+				</h3>
+			</a>
+			<a href="Promo.html">
+				<h3>
+					Promo Video
+				</h3>
+			</a>
+			<a href="../Card.html">
+				<h3>
+					Back To Card
+				</h3>
+			</a>
+		</header>
 
+	-->
         <main>
 
             <section class="Main">
@@ -221,65 +245,134 @@ TODO: some art changes
 						You may contact me by filling details below, 
 						in addition you can reach me on discord by friending 'celiroot'.
 					</p>
-					<form id="contactForm">
+					<form id="contactForm" action="mailto:felithiamity.maker130@passinbox.com" moethod="post" enctype"text/plain">
 						<div>
 							<p>
 								Email:
 							</p>
-							<input type="text" class="contextField" name="Email" maxlength="50" size="50">
+							<input type="text" class="contextField" name="Email" maxlength="50" size="50" required>
 						</div>
 						<div>
 							<p>
 								Name:
 							</p>
-							<input type="text" class="contextField" name="Name" maxlength="40" size="40">
+							<input type="text" class="contextField" name="Name" maxlength="40" size="40" required>
 						</div>
 						<div>
 							<p>
 								Inquiry:
 							</p>
-							<textarea class="contextField" name="ContextField"></textarea>
+							<textarea class="contextField" name="ContextField" required></textarea>
 						</div>
 						<input type="submit" value="Submit" id="submit" class="contextField" >
 					</form>
 				</div>
 
 			</section>
-		<div class="seperator">
-		</div>       
 		</main>
 
 
     <div class="Footer">
 
+		<div>
 
         <div id="SocialMedia">
-            <a href="https://github.com/CelestiaCeli"><img id="invert" src="../../../Assets/Logos/GithubLogo.svg" alt="Github Logo"></a>
-            <a href="https://mastodon.social/@Dyst0pian"><img src="../../../Assets/Logos/MastodonLogo.svg" alt="Mastodon Logo"></a>
-            <a href="https://discord.com/"><img src="../../../Assets/Logos/DiscordLogo.svg" alt="Discord Logo"></a>
-            <a href="https://www.youtube.com/@Xorgel-Celiantia"><img src="../../../Assets/Logos/YoutubeLogo.svg" alt="Youtube Logo"></a>
+            <a href="https://github.com/CelestiaCeli">
+				<img id="invert" src="../../../Assets/Logos/GithubLogo.svg" alt="Github Logo">
+			</a>
+            <a href="https://mastodon.social/@Dyst0pian">
+				<img src="../../../Assets/Logos/MastodonLogo.svg" alt="Mastodon Logo">
+			</a>
+            <a href="https://discord.com/">
+				<img src="../../../Assets/Logos/DiscordLogo.svg" alt="Discord Logo">
+			</a>
+            <a href="https://www.youtube.com/@Xorgel-Celiantia">
+				<img src="../../../Assets/Logos/PeertubeLogo.svg" alt="Peertube Logo">
+			</a>
         </div>
-
-		<div id="contextOptions">
-			<a href="#title" class="LeftSide">
-				<p>
-					Back to top
-				</p>
-			</a>
-			<a href="../Credits.html" class="LeftSide">
-				<p>
-					Special Thanks
-				</p>
-			</a>
-		</div>
 
 		<div id="copyright"> 
 			<p>
 				@2026, Celeste/Cesaster, 
 			</p>
 		</div>
-	</div>
-	
+
+		</div>
+
+		<div id="contextOptions">
+			<div>
+				<h4>
+					Professional
+				</h4>
+
+				<a href="AboutMe.html">
+					<p>
+						About Me
+					</p>
+				</a>
+
+				<a href="Extended.html">
+					<p>
+						Portfolio
+					</p>
+				</a>
+
+				<a href="Promo.html">
+					<p>
+						Promo Video
+					</p>
+				</a>
+
+			</div>
+
+			<div>
+				<h4> 
+					UnProfessional
+				</h4>
+
+				<a href="../UnProfessional/FriendPost.html">
+					<p>
+						Friend Post
+					</p>
+				</a>
+
+				<a href="../UnProfessional/FriendPost.html">
+					<p>
+						Friend Post
+					</p>
+				</a>
+
+				<a href="../UnProfessional/FriendPost.html">
+					<p>
+						Friend Post
+					</p>
+				</a>
+			</div>
+
+			<div>
+				<h4>Misc</h4>
+
+				<a href="../Card.html">
+					<p>
+						Card
+					</p>
+				</a>
+
+				<a href="#title" class="LeftSide">
+					<p>
+						Back to top
+					</p>
+				</a>
+
+				<a href="../Credits.html" class="LeftSide">
+					<p>
+						Special Thanks
+					</p>
+				</a>
+
+			</div>
+			</div>
+		</footer>
 
     </body>
 </html>

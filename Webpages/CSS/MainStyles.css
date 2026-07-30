@@ -125,6 +125,12 @@
 		align-items: baseline;
 	}
 
+	.sectionGrid
+	{
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+
 	/* Icons */
 
 		.Footer #SocialMedia
@@ -152,11 +158,12 @@
 		#contextOptions
 		{
 			display: grid;
-			grid-template-columns: auto;
-			gap: 0.5vw;
+			grid-template-columns: auto auto auto;
+			gap: 1vw;
 			align-items: center;
 			justify-self:center; 
 			font-size: 1.5vw;
+			margin-top: 0vw;
 		}
 
 		#contextOptions a p
