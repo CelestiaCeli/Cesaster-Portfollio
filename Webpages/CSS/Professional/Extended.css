@@ -9,6 +9,8 @@ body {
 .Showcase
 {
     justify-self: center;
+	justify-content: center;
+	align-items: baseline;
 }
 
 .GameImage
@@ -25,3 +27,13 @@ body {
     gap: 1vw;
 }
 
+.Showcase div img
+{
+	width: 20%;
+}
+
+.Showcase div h2
+{
+	font-size: 200%;
+
+}
