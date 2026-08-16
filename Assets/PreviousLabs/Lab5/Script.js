@@ -21,7 +21,7 @@ function CheckWord() {
     
 
     var myWord = ChosenWord;
-    var url = "https://api.dictionaryapi.dev/api/v2/entries/en/" + myWord;
+    var url = "https://freedictionaryapi.com/api/v1/entries/en/" + myWord;
 
     if (ChosenWord.length >= Rows)
     {
@@ -113,7 +113,7 @@ function apiCall()
     GeneratedWord;
     if (Rows >= 3 && Rows <= 9)
     {
-        fetch('https://random-word-api.vercel.app/api?words=1&length=' + Rows)
+        fetch('https://random-word-api.herokuapp.com/word?length=' + Rows + '&lang=en')
         .then(response => {
             if (!response.ok) {
                 GeneratedWord = "N/A";

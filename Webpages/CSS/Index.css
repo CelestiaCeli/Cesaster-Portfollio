@@ -9,10 +9,24 @@
 			align-content: center;
 		}
 
+
+		main
+		{
+			padding-top: 5vw;
+			padding-bottom: 5vw;
+
+			padding-left: 10vw;
+			padding-right: 10vw;
+		}
+
+		p
+		{
+			font-size: 200%;
+		}
 /* Text */
 
 		h2 {
-			padding: 22vw;
+			padding-top: 15vw;
 			margin: 0vw;
 			font-size: 3vw;
 			text-align: center;

@@ -34,6 +34,10 @@ TODO: some art changes
 		<!-- Style Sheets -->
         <link href="../../CSS/MainStyles.css" rel="stylesheet">
 		<link href="../../CSS/Professional/AboutMe.css" rel="stylesheet">
+		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
+		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
+		<link href="../../CSS/Objects/ProfessionalResume.css" rel="stylesheet">
+		<link href="../../CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
 
 		<!-- Classes/Objects -->
 		<script src="../../JavaScript/Objects/Fader.js"></script>
@@ -48,13 +52,14 @@ TODO: some art changes
     </head>
 
     <body>
+		<img id="headerBackground" src="../../../Assets/Backgrounds/Background.webp">
 		<section id="title">
             <h1>
                 Celeste
             </h1>
 		</section>
-	<!--
 		<header>
+
 			<a href="Extended.html">
 				<h3>
 					Portfolio
@@ -77,15 +82,14 @@ TODO: some art changes
 			</a>
 		</header>
 
-	-->
         <main>
 
-            <section class="Main">
+            <section id="resumeSection">
 
 				<div id="nyanileStopper">
 					<img src="../../../Assets/Art/nyanile.png" alt="An image of my fursona!" id="NyanileMain">
 				</div>
-                <div id="resume">
+                <div id="resume" class="background">
 					<div id="mainInfo">
 						<img src="../../../Assets/Logos/FelithiamityLogo.webp" alt="My personal logo">
 						<h2>Hello, my name is Celeste!</h2>
@@ -196,7 +200,7 @@ TODO: some art changes
 
             </section>
  
-			<section id="AboutMe">
+			<section id="AboutMe" class="background">
 				<div id="aboutMeHeader">
 					<h2>
 						About Me
@@ -245,7 +249,10 @@ TODO: some art changes
 					<p id="contactSubtext">
 						There are various ways to contact me! 
 						You may contact me by filling details below, 
-						in addition you can reach me on discord by friending 'celiroot'.
+						in addition you can reach me on discord by 
+						<a href="https://discord.gg/796ArU5p33"> 
+							clicking here! 
+						</a>
 					</p>
 					<form id="contactForm" action="mailto:felithiamity.maker130@passinbox.com" moethod="post" enctype"text/plain">
 						<div>
@@ -274,38 +281,26 @@ TODO: some art changes
 		</main>
 
 	<footer>
-		<!--
-    <div class="Footer">
-		<div>
+		<div id="credits">
+			<div id="SocialMedia">
+				<a href="https://github.com/CelestiaCeli">
+					<img id="invert" src="../../../Assets/Logos/GithubLogo.svg" alt="Github Logo">
+				</a>
+				<a href="https://mastodon.social/@Dyst0pian">
+					<img src="../../../Assets/Logos/MastodonLogo.svg" alt="Mastodon Logo">
+				</a>
+				<a href="https://discord.com/">
+					<img src="../../../Assets/Logos/DiscordLogo.svg" alt="Discord Logo">
+				</a>
+				<a href="https://www.youtube.com/@Xorgel-Celiantia">
+					<img src="../../../Assets/Logos/PeertubeLogo.svg" alt="Peertube Logo">
+				</a>
+			</div>
 
-        <div id="SocialMedia">
-            <a href="https://github.com/CelestiaCeli">
-				<img id="invert" src="../../../Assets/Logos/GithubLogo.svg" alt="Github Logo">
-			</a>
-            <a href="https://mastodon.social/@Dyst0pian">
-				<img src="../../../Assets/Logos/MastodonLogo.svg" alt="Mastodon Logo">
-			</a>
-            <a href="https://discord.com/">
-				<img src="../../../Assets/Logos/DiscordLogo.svg" alt="Discord Logo">
-			</a>
-            <a href="https://www.youtube.com/@Xorgel-Celiantia">
-				<img src="../../../Assets/Logos/PeertubeLogo.svg" alt="Peertube Logo">
-			</a>
-        </div>
-
-		<div id="copyright"> 
-			<p>
-				@2026, Celeste/Cesaster, 
-			</p>
-		</div>
-
-		</div>
-
-		<div id="contextOptions">
 			<div>
-				<h4>
+				<h2>
 					Professional
-				</h4>
+				</h2>
 
 				<a href="AboutMe.html">
 					<p>
@@ -328,54 +323,72 @@ TODO: some art changes
 			</div>
 
 			<div>
-				<h4> 
+				<h2> 
 					UnProfessional
-				</h4>
+				</h2>
 
-				<a href="../UnProfessional/FriendPost.html">
+				<a href="../WorkInProgress.html">
 					<p>
-						Friend Post
+						N/A
 					</p>
 				</a>
 
-				<a href="../UnProfessional/FriendPost.html">
+				<a href="../WorkInProgress.html">
 					<p>
-						Friend Post
+						N/A
 					</p>
 				</a>
 
-				<a href="../UnProfessional/FriendPost.html">
+				<a href="../WorkInProgress.html">
 					<p>
-						Friend Post
+						N/A
 					</p>
 				</a>
 			</div>
 
 			<div>
-				<h4>Misc</h4>
+				<h2> Misc </h2>
 
-				<a href="../Card.html">
+				<a href="../WorkInProgress.html">
 					<p>
 						Card
-					</p>
+					<p>
 				</a>
 
+				<a href="../WorkInProgress.html">
+					<p>
+						N/A
+					<p>
+				</a>
+
+				<a href="../WorkInProgress.html">
+					<p>
+						N/A
+					<p>
+				</a>
+			</div>
+
+			<div id="contextOptions">
 				<a href="#title" class="LeftSide">
 					<p>
 						Back to top
 					</p>
 				</a>
-
 				<a href="../Credits.html" class="LeftSide">
 					<p>
 						Special Thanks
 					</p>
 				</a>
+			</div>
 
+			<div id="copyright"> 
+				<p>
+					@2026, Celeste/Cesaster, 
+				</p>
 			</div>
-			</div>
-		-->
-		</footer>
+
+		</div>
+	</footer>
 
     </body>
 </html>

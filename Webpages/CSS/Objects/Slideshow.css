@@ -1,0 +1,18 @@
+#artCollection
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	align-items: center;
+	justify-content: center;
+	gap: 1vw;
+}
+
+#artCollection > *
+{
+	max-width: 17vw;
+	max-height: 17vw;
+	width: 600px;
+	object-fit: cover;
+	height: 600px;
+		
+}

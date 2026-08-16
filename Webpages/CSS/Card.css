@@ -23,15 +23,12 @@ li::marker
 		margin-top: 2vw;
 	}
 
-
-
 /* Card Specific */
 
 	#card 
 	{
 		display: grid;
 		grid-template-columns: auto auto;
-		gap: 5vw;
 
 		padding-top: 3vw;
 		padding-bottom: 3vw;
@@ -54,11 +51,10 @@ li::marker
 	}
 
 
-	#iconLogo img
+	#iconLogo
 	{
 		position:absolute;
-		margin-left: 54vw;
-		margin-top: 0vw;
+		margin-left: 57vw;
 		width: 23vw;
 		transform:scaleX(-1)
 	}
@@ -92,8 +88,8 @@ li::marker
 			justify-content: left;
 			margin-left: 0vw;
 			grid-template-rows: auto auto;
-
-			margin-right: 20vw;
+			margin-right: 25vw;
+			margin-top: -1vw;
 
 		}
 

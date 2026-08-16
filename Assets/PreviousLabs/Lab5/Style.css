@@ -1,6 +1,6 @@
 body {
     align-items: center;
-    background-image: url('Assets/BackgroundImage.jpg');
+    background-image: url("../../Backgrounds/TitleBackground.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }

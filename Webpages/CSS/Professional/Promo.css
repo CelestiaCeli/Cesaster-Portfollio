@@ -7,6 +7,11 @@
 			padding: 0;
 		}
 
+		main
+		{
+			margin-top: 5vw;
+		}
+
 		video 
 		{
 			justify-content: center;

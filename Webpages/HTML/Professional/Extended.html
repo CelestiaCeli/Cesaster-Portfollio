@@ -1,3 +1,20 @@
+<!--
+HTML to-do
+
+Features this site should have
+- Game Showcase
+- Indepth resume + downloadable resume
+- Art Slideshow
+- ???
+- Profit
+
+- Project generator javascript object
+- Art slideshow javascript object
+- Header javascript object
+- Footer javascript object
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,6 +24,12 @@
 		<!-- Style Sheets -->
         <link href="../../CSS/MainStyles.css" rel="stylesheet">
 		<link href="../../CSS/Professional/Extended.css" rel="stylesheet">
+
+		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
+		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
+		<link href="../../CSS/Objects/ProfessionalResume.css" rel="stylesheet">
+		<link href="../../CSS/Objects/Slideshow.css" rel="stylesheet">
+		<link href="../../CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
 
 		<!-- Classes/Objects -->
 		<script src="../../JavaScript/Objects/Fader.js"></script>
@@ -20,13 +43,76 @@
         </title>
     </head>
 	<body>
+		<img id="headerBackground" src="../../../Assets/Backgrounds/Background.webp">
+		<section id="title">
+            <h1>
+                Celeste
+            </h1>
+		</section>
+		<header>
+
+			<a href="Extended.html">
+				<h3>
+					Portfolio
+				</h3>
+			</a>
+			<a href="AboutMe.html">
+				<h3>
+					About Me
+				</h3>
+			</a>
+			<a href="Promo.html">
+				<h3>
+					Promo Video
+				</h3>
+			</a>
+			<a href="../Card.html">
+				<h3>
+					Back To Card
+				</h3>
+			</a>
+		</header>
+
 		<main>
+			<section id="projectSection">
 				<h1>
 					Previous Works
 				</h1>
 
-				<div class="Showcase" id="Games">
+				<div class="project" id="Games">
 
+				<div id="AllSeeing">
+					<h2>
+						PartyGeists
+					</h2>
+					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
+						<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" class="GameImage" alt="An image of my game named 'AllSeeing'">
+					</a>
+					<p>
+						A chaotic party game where you are your friend's enemy. Spawn zombies and cause mayhem board-wide!
+					</p>
+					<p>
+						Coming Soon...
+					</p>
+				</div>
+
+				<div id="AllSeeing">
+					<h2>
+						Wordle Clone
+					</h2>
+					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
+						<img src="../../../Assets/Games/Static/WordleClone-Static.webp" class="GameImage" alt="An image of my game named 'AllSeeing'">
+					</a>
+					<p>
+						Made during class as a learning lesson towards JavaScript.
+					</p>
+					<a href="../../../Assets/PreviousLabs/Lab5/Main.html">
+						<p>
+							Click here to see.
+						</p>
+					</a>
+				</div>
+				
 				<div id="AllSeeing">
 					<h2>
 						Posession Sim: The House With No Kitchen.
@@ -35,58 +121,268 @@
 						<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" class="GameImage" alt="An image of my game named 'AllSeeing'">
 					</a>
 					<p>
-						A puzzle game
+						A GameJam puzzle game. Alternate between three unique perspectives and solve puzzles through each lens!
 					</p>
-					<p>
-						Unreleased N/A
-					</p>
+					<a href="https://caflianutopia.itch.io/possession-sim-the-house-with-no-kitchen">
+						<p>
+							Oct 25th 2025
+						</p>
+					</a>
 				</div>
 
-				<div id="AllSeeing">
-					<h2>
-						Posession Sim: The House With No Kitchen.
-					</h2>
-					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
-						<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" class="GameImage" alt="An image of my game named 'AllSeeing'">
-					</a>
-					<p>
-						A puzzle game
-					</p>
-					<p>
-						Unreleased N/A
-					</p>
+				</section>
+
+				<div class="seperator"> 
 				</div>
 
-				<div id="AllSeeing">
-					<h2>
-						Posession Sim: The House With No Kitchen.
-					</h2>
-					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
-						<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" class="GameImage" alt="An image of my game named 'AllSeeing'">
-					</a>
-					<p>
-						A puzzle game
-					</p>
-					<p>
-						Unreleased N/A
-					</p>
+            <section id="resumeSection">
+
+				<div id="nyanileStopper">
+					<img src="../../../Assets/Art/nyanile.png" alt="An image of my fursona!" id="NyanileMain">
+				</div>
+                <div id="resume" class="background">
+					<div id="mainInfo">
+						<img src="../../../Assets/Logos/FelithiamityLogo.webp" alt="My personal logo">
+						<h2>Hello, my name is Celeste!</h2>
+						<p>
+							I am a Canadian Computer Scientist with a passion in developing videogames. 
+							I specialize in programming and art and I approach situations in various ways when 
+							performing critical problem solving. All while following a standard!
+						</p>
+
+					</div>
+					
+					<div id="skills">
+						<h2>
+							Skills
+						</h2>
+
+						<div id="skillShowcase">
+
+							<div id="softSkills">
+								<h3>
+									Soft Skills
+								</h3>
+
+								<ul>
+									<li>
+										<p>
+											Constantly shares progress, updating statuses on current tasks.
+										</p>
+									</li>
+									<li>
+										<p>
+											Great Leadership in college,
+										</p>
+									</li>
+									<li>
+										<p>
+											Motivational while seeking out further areas of growth; always learning!
+										</p>
+									</li>
+									<li>
+										<p>
+											Effective Communication
+										</p>
+									</li>
+
+								</ul>
+							</div>
+
+							<div id="hardSkills">
+								<h3> 
+									Hard Skills 
+								</h3>
+								
+								<ul>
+								
+									<li>
+										<p>
+											Two years of profiency in Game Programming
+										</p>
+									</li>
+									<li>
+										<p>
+											Languages such as C#, C++, HTML, and Python.
+										</p>
+									</li>
+									<li>
+										<p>
+											Familiar with both linux and windows environments; well adjusted to the terminal.
+										</p>
+									</li>
+									<li>
+										<a href="https://monkeytype.com/profile/Xorgel"> 
+											<p>
+												High typing speed leading to great efficiency – 110 wpm!
+											</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					
+					<div id="recentProject">
+						<a href="https://discord.gg/bnt3x7yPBh">
+							<h2>
+								Recent Project
+							</h2>
+							<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" alt="An image showcasing my most recent endavour">
+							<h3> 
+								Party Geists 
+							</h3>
+
+							<p>
+								A Zombie Survival Party Game!
+							</p>
+						</a>
+						<!--
+							<a href="../../../Assets/Documents/Resume.pdf">
+								<p>
+								Click here for an expanded version of my resume!
+								</p>
+							</a>
+						-->
+
+                	</div>
 				</div>
 
-				<div id="AllSeeing">
+            </section>
+
+
+
+				<section id="slideshow">
 					<h2>
-						Posession Sim: The House With No Kitchen.
+						I also do art!!
 					</h2>
-					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
-						<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" class="GameImage" alt="An image of my game named 'AllSeeing'">
-					</a>
+
+					<div id="artCollection">
+						<img src="../../../Assets/Art/StickmanDead.webp">
+						<img src="../../../Assets/Art/Fursona_2.webp">
+						<img src="../../../Assets/Art/Fursona_1.webp">
+						<img src="../../../Assets/Art/FursonaV3.webp">
+					</div>
+
 					<p>
-						A puzzle game
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet posuere ligula, et finibus massa. Donec justo nisl, dignissim id finibus at, interdum in quam. Nunc ac ultricies ante. Curabitur imperdiet imperdiet arcu a facilisis.
 					</p>
-					<p>
-						Unreleased N/A
-					</p>
-				</div>
+
+
+				</section>
+
 			</main>
+
+				<footer>
+		<div id="credits">
+			<div id="SocialMedia">
+				<a href="https://github.com/CelestiaCeli">
+					<img id="invert" src="../../../Assets/Logos/GithubLogo.svg" alt="Github Logo">
+				</a>
+				<a href="https://mastodon.social/@Dyst0pian">
+					<img src="../../../Assets/Logos/MastodonLogo.svg" alt="Mastodon Logo">
+				</a>
+				<a href="https://discord.com/">
+					<img src="../../../Assets/Logos/DiscordLogo.svg" alt="Discord Logo">
+				</a>
+				<a href="https://www.youtube.com/@Xorgel-Celiantia">
+					<img src="../../../Assets/Logos/PeertubeLogo.svg" alt="Peertube Logo">
+				</a>
+			</div>
+
+			<div>
+				<h2>
+					Professional
+				</h2>
+
+				<a href="AboutMe.html">
+					<p>
+						About Me
+					</p>
+				</a>
+
+				<a href="Extended.html">
+					<p>
+						Portfolio
+					</p>
+				</a>
+
+				<a href="Promo.html">
+					<p>
+						Promo Video
+					</p>
+				</a>
+
+			</div>
+
+			<div>
+				<h2> 
+					UnProfessional
+				</h2>
+
+				<a href="../WorkInProgress.html">
+					<p>
+						N/A
+					</p>
+				</a>
+
+				<a href="../WorkInProgress.html">
+					<p>
+						N/A
+					</p>
+				</a>
+
+				<a href="../WorkInProgress.html">
+					<p>
+						N/A
+					</p>
+				</a>
+			</div>
+
+			<div>
+				<h2> Misc </h2>
+
+				<a href="../WorkInProgress.html">
+					<p>
+						Card
+					<p>
+				</a>
+
+				<a href="../WorkInProgress.html">
+					<p>
+						N/A
+					<p>
+				</a>
+
+				<a href="../WorkInProgress.html">
+					<p>
+						N/A
+					<p>
+				</a>
+			</div>
+
+			<div id="contextOptions">
+				<a href="#title" class="LeftSide">
+					<p>
+						Back to top
+					</p>
+				</a>
+				<a href="../Credits.html" class="LeftSide">
+					<p>
+						Special Thanks
+					</p>
+				</a>
+			</div>
+
+			<div id="copyright"> 
+				<p>
+					@2026, Celeste/Cesaster, 
+				</p>
+			</div>
+
+		</div>
+	</footer>
 
 
 		</div>
