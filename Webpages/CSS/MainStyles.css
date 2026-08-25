@@ -1,5 +1,28 @@
 /* Universal */
 
+	/* Additional CSS Fonts */
+
+		@font-face 
+		{
+			font-family: itsadzoke;
+			src: url('../../Assets/Fonts/itsadzoke-046.otf');
+		}
+
+		@font-face {
+			font-family: fac;
+			src: url('Assets/Fonts/GoodfishRg.otf');
+		}
+
+		@font-face {
+			font-family: Drybrush;
+			src: url('Assets/Fonts/Drybrush.ttf');
+		}
+
+		@font-face {
+			font-family: Cyen;
+			src: url('Assets/Fonts/Cyen.ttf');
+		}
+
 	/* Effects */
 
 	#invert
@@ -36,15 +59,6 @@
 		p
 		{
 			font-size: 120%;
-		}
-
-
-
-
-		@font-face 
-		{
-			font-family: itsadzoke;
-			src: url('../../Assets/Fonts/itsadzoke-046.otf');
 		}
 		
 	/* Sticky Elements */
