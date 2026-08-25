@@ -25,15 +25,19 @@ Features this site should have
         <link href="../../CSS/MainStyles.css" rel="stylesheet">
 		<link href="../../CSS/Professional/Extended.css" rel="stylesheet">
 
-		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
-		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
+		<!-- Style Classes -->
 		<link href="../../CSS/Objects/ProfessionalResume.css" rel="stylesheet">
-		<link href="../../CSS/Objects/Slideshow.css" rel="stylesheet">
+		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
 		<link href="../../CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
 
+		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
+		<link href="../../CSS/Objects/Slideshow.css" rel="stylesheet">
+
 		<!-- Classes/Objects -->
-		<script src="../../JavaScript/Objects/Fader.js"></script>
-		<script src="../../JavaScript/Professional/Header.js"> </script>
+		<script src="../../JavaScript/Objects/Header.js" type="module"></script>
+		<script src="../../JavaScript/Objects/Footer.js" type="module"></script>
+
+		<script src="../../JavaScript/Objects/SocialMedia.js" type="module"></script>
 
 		<!-- Main Script Files -->
 		<script src="../../JavaScript/MainScript.js"></script>
@@ -43,11 +47,8 @@ Features this site should have
             About Me - Felithamity
         </title>
     </head>
-    <body
-		onload=HeaderGenerate()
-		onload=FooterGenerate()
-	>		
-		<header>
+	<body>
+		<header id="header">
 		</header>
 
 	<main>
@@ -77,7 +78,6 @@ Features this site should have
 					<h2>
 						Wordle Clone
 					</h2>
-					<img src="/Assets/Backgrounds/Background.webp">
 					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
 						<img src="../../../Assets/Games/Static/WordleClone-Static.webp" class="GameImage" alt="An image of my game named 'AllSeeing'">
 					</a>
@@ -239,12 +239,8 @@ Features this site should have
 					<p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet posuere ligula, et finibus massa. Donec justo nisl, dignissim id finibus at, interdum in quam. Nunc ac ultricies ante. Curabitur imperdiet imperdiet arcu a facilisis.
 					</p>
-
-
-					<footer>
-					</footer>
 				</section>
-
+					<footer id="footer">
 			</main>
 		</div>
 	</body>

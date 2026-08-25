@@ -34,18 +34,26 @@ TODO: some art changes
 		<!-- Style Sheets -->
         <link href="../../CSS/MainStyles.css" rel="stylesheet">
 		<link href="../../CSS/Professional/AboutMe.css" rel="stylesheet">
-		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
-		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
+
+		<!-- Style Classes -->
+
 		<link href="../../CSS/Objects/ProfessionalResume.css" rel="stylesheet">
+		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
+		<link href="../../CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
+
+		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
+		<link href="../../CSS/Objects/Slideshow.css" rel="stylesheet">
 
 		<!-- Classes/Objects -->
 		<script src="../../JavaScript/Objects/Fader.js"></script>
+		<script src="../../JavaScript/Objects/Header.js" type="module"></script>
+		<script src="../../JavaScript/Objects/Footer.js" type="module"></script>
+
+		<script src="../../JavaScript/Objects/SocialMedia.js" type="module"></script>
 
 		<!-- Main Script Files -->
 		<script src="../../JavaScript/MainScript.js"></script>
 		<script src="../../JavaScript/Professional/AboutMe.js"></script>
-		<script src="../../JavaScript/Objects/Header.js"></script>
-		<script src="../../JavaScript/Objects/Generator.js"></script>
 
         <title>
             About Me - Felithamity
@@ -53,10 +61,9 @@ TODO: some art changes
     </head>
 
 	<!-- Startup functions that generate predetermined objects -->
-    <body
-		onload=
-	>
-		<header>
+	<body>
+
+		<header id="header">
 		</header>
 
         <main>
@@ -257,7 +264,7 @@ TODO: some art changes
 			</section>
 		</main>
 
-	<footer>
+	<footer id="footer">
 	</footer>
 
     </body>

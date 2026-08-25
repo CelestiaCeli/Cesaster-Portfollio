@@ -1,18 +1,23 @@
 export default class Generator
 {
-	var content;
-	var name;
+	constructor()
+	{
+		this.name = "idk";
+		this.ID = "null";
+		this.content = "idk";
+	}
 
 	Generate()
 	{
+		console.log(this.ID);
+		const selectedElement = document.getElementById(this.ID);
 		const newElement = document.createElement("div");
-		const header = RetrieveElement
 
+		newElement.innerHTML = this.content;
+		const node = new DOMParser().parseFromString(this.content, "text/html").body;
 
-		newElement.innerHTML = headerContent;
-		const node = new DOMParser().parseFromString(headerContent, "text/html").body;
-
-		header.appendChild(node.childNodes[0]);
+		console.log(selectedElement);
+		selectedElement.appendChild(node.childNodes[0]);
 	}
 
 	RetrieveElement()
