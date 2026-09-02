@@ -2,9 +2,8 @@ export default class Generator
 {
 	constructor()
 	{
-		this.name = "idk";
+		this.name = "null";
 		this.ID = "null";
-		this.content = "idk";
 	}
 
 	Generate()

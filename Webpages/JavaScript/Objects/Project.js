@@ -1,22 +1,30 @@
 export default class Project
 {
-	constructor(var projectName)
+	constructor(_staticImage, _animatedImage)
 	{
-		this.projectName = projectName;
-		this.projectDirectory = "/Webpages/JSON/Objects/Projects/";
+		this.staticImage = _staticImage;
+		this.animatedImage = _animatedImage;
+		this.hover = false;
+	}
+
+	OnHover()
+	{
+		if (hover == false)
+		{
+			SetAnimated();
+		}
+		else
+		{
+			SetStatic();
+		}
+
+		this.hover = !this.hover;
 
 	}
 
-	function ScanProjects()
-	{
-		this.projectDirectory = "/Webpages/JSON/Objects/Projects/";	
-	}
+	SetAnimated() {}
 
-	function SetProject(var ProjectName)
-	{
-		this.projectName = projectName;
-		this.projectDirectory = "/Webpages/JSON/Objects/Projects/";
-	}
-
-
+	SetStatic() {}
 }
+
+

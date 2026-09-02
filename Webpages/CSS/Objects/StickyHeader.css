@@ -1,10 +1,27 @@
 header
 {
+	display: contents;
+}
+
+#header
+{
+	display: contents;
+}
+
+#title
+{
 	position: sticky;
-	top: -1vw;
+	top: 1.5%;
+}
+
+#generatedHeader
+{
+	position: sticky;
+	top: 0;
 }
 
 #headerBackground
 {
-	position: sticky;
+	height: 25vh;
 }
+

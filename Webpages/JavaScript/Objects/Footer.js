@@ -9,19 +9,19 @@ class Footer extends Generator
 		this.content = "<div id='credits'>" +
 							"<div id='socialMedia'>" +
 							"</div>" +
-							"<div>" +
+							"<div class='contextMenu'>" +
 							"<h2> Professional </h2>" +
 							"<a href='AboutMe.html'> <p> About Me </p> </a>" +
 							"<a href='AboutMe.html'> <p> About Me </p> </a>" +
 							"<a href='AboutMe.html'> <p> About Me </p> </a>" +
 							"</div>" +
-							"<div>" +
+							"<div class='contextMenu'>" +
 							"<h2> Professional </h2>" +
 							"<a href='AboutMe.html'> <p> About Me </p> </a>" +
 							"<a href='AboutMe.html'> <p> About Me </p> </a>" +
 							"<a href='AboutMe.html'> <p> About Me </p> </a>" +
 							"</div>" +
-							"<div>" +
+							"<div class='contextMenu'>" +
 							"<h2> Professional </h2>" +
 							"<a href='AboutMe.html'> <p> About Me </p> </a>" +
 							"<a href='AboutMe.html'> <p> About Me </p> </a>" +

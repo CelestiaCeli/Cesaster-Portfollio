@@ -215,29 +215,3 @@
 		}
 
 		/* Form */
-
-/* Header */
-
-	/* Title */
-
-
-		#title
-		{
-
-			height: 7vh;
-			display:inline-block;
-			width: 98.5vw;
-			padding-top: 0;
-			margin-top: 0vw;
-			margin-bottom: -2.5vw;
-		}
-
-		#title h1
-		{
-			font-size: 3.5vw;
-			position: sticky;
-			font-family: itsadzoke;
-			top: 0.5vw;
-			z-index: 2;
-			margin: 0vw;
-		}
