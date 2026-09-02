@@ -3,7 +3,17 @@
 	animation: fadein 0.6s;
 }
 
-#NyanileMain
-{
-	animation: fadein 1.0s;
+@media screen and (min-width: 700px) {
+	#NyanileMain
+	{
+		animation-name: fadein;
+		animation-duration: 1.0s;
+	}
+}
+@media screen and (max-width: 700px) {
+	#NyanileMain
+	{
+		animation-name: fadeout;
+		animation-duration: 1.0s;
+	}
 }

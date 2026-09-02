@@ -95,7 +95,7 @@
 @media screen and (max-width: 700px) {
 	#NyanileMain
 	{
-		display:none;
+		animation: fadeout 0.6s;
 	}
 
 	#resumeSection
