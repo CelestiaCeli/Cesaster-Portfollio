@@ -7,11 +7,11 @@ export default class Fader
 {
 	constructor(_lowFade, _highFade, _time) 
 	{
-		SetFadeAmt(_lowFade, _highFade);
+		this.SetFadeAmt(_lowFade, _highFade);
 		this.time = _time * MILISECOND_AMPLIFIER;
 	}
 
-	static fadeOnly(_lowFade, _highFade)
+	static FadeOnly(_lowFade, _highFade)
 	{
 		return new Fader(_lowFade, _highFade, DEFAULT_TIME);
 	}

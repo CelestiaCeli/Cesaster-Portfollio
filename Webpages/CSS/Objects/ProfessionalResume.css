@@ -83,7 +83,7 @@
 
 		#nyanileStopper
 		{
-			max-height: 55vw;
+			max-height: 80%;
 		}
 
 		#recentProject img
@@ -92,3 +92,14 @@
 			width: 40%;
 		}
 
+@media screen and (max-width: 700px) {
+	#NyanileMain
+	{
+		display:none;
+	}
+
+	#resumeSection
+	{
+		display:block;
+	}
+}

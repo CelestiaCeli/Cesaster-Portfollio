@@ -1,26 +1,47 @@
 import Fader from "./Fader.js"
+const DEFAULT_HIGHFADE = 100;
+const DEFAULT_LOWFADE = 0;
+const DEFAULT_TIME = 5;
+const MILISECOND_AMPLIFIER = 100;
 
-class ObjectFader extends Fader
+export default class ObjectFader extends Fader
 {
 	constructor(_element, _lowFade, _highFade, _time)
 	{
-		this.element = _element;
 		super(_lowFade, _highFade, _time);
-	}
-
-	constructor(_element, _lowFade, _highFade)
-	{
 		this.element = _element;
-		super(_lowFade, _highFade);
+		this.on = false;
 	}
 
-
-	constructor(_element, _time)
+	static TimeOnly(_element, _time)
 	{
-		this.element = _element;
-		super(_time);
+		return new ObjectFader(DEFAULT_LOWFADE, DEFAULT_HIGHFADE, _time);
 	}
 
+	static FadeOnly(_element, _lowFade, _highFade)
+	{
+		return new ObjectFader(_lowFade, _highFade, DEFAULT_TIME);
+	}
 
+	OnScroll()
+	{
+		var Limitation
+		var totalHeight = document.body.scrollHeight;
+		var scrollHeight = window.scrollY;
+		const TITLE_FADE = 40;
+		
+		var currHeightPercent = totalHeight / scrollHeight;
+
+		if (currHeightPercent < TITLE_FADE && this.on == false)
+		{
+			console.log("Fading");
+			this.on = true;
+		}
+		else if (currHeightPercent > TITLE_FADE && this.on == true)
+		{
+			console.log("Coming back");
+			this.on = false;
+		}
+	}
 
 }

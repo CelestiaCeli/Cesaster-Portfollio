@@ -2,10 +2,10 @@
 
 	#credits
 	{
-		display: flex;
+		display: grid;
 		flex-wrap: wrap;
 		align-items: center;
-		grid-template-columns: auto auto auto auto;
+		grid-template-columns: auto auto auto;
 		justify-content: center;
 		margin-right: 6vw;
 		gap: 6%;
