@@ -21,32 +21,63 @@ Features this site should have
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <title>
+            Extended
+        </title>
 		<!-- Style Sheets -->
         <link href="../../CSS/MainStyles.css" rel="stylesheet">
 		<link href="../../CSS/Professional/Extended.css" rel="stylesheet">
 
-		<!-- Style Classes -->
-		<link href="../../CSS/Objects/ProfessionalResume.css" rel="stylesheet">
-		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
-		<link href="../../CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
+			<!-- Resume -->
+			<link href="../../CSS/Objects/ProfessionalResume.css" rel="stylesheet">
+			<link href="../../CSS/Objects/AnimatedResume.css" rel="stylsheet">
 
-		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
-		<link href="../../CSS/Objects/Slideshow.css" rel="stylesheet">
+			<!-- Header -->
 
-		<!-- Classes/Objects -->
-		<script src="../../JavaScript/Objects/Header.js" type="module"></script>
-		<script src="../../JavaScript/Objects/Footer.js" type="module"></script>
+			<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
+			<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
 
-		<script src="../../JavaScript/Objects/SocialMedia.js" type="module"></script>
+			<!-- Social Media -->
+			<link href="../../CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
+			<link href="../../CSS/Objects/SocialMedia.css" rel="stylesheet">
 
-		<!-- Main Script Files -->
+			<!-- Gallery -->
+			<link href="../../CSS/Objects/Slideshow.css" rel="stylesheet">
+
+		<!-- Javascript Classes -->
 		<script src="../../JavaScript/MainScript.js"></script>
 		<script src="../../JavaScript/Professional/Extended.js"></script>
 
-        <title>
-            About Me - Felithamity
-        </title>
+			<!-- Header -->
+			<script src="../../JavaScript/Objects/Header.js" type="module"></script>
+			<script src="../../JavaScript/Objects/ObjectFader.js" type="module"></script>
+
+			<!-- Footer -->
+			<script src="../../JavaScript/Objects/Footer.js" type="module"></script>
+			<script src="../../JavaScript/Objects/SocialMedia.js" type="module"></script>
+
+			<!-- Projects -->
+			<script src="../../JavaScript/Objects/ProjectByID.js" type="module"></script>
+			<script src="../../JavaScript/Objects/ProjectGenerator.js" type="module"></script>
+
+			<!-- Art -->
+			<script src="../../JavaScript/Objects/Gallery.js" type="module"></script>
+			<script src="" type="module"></script>
+
+			<script>
+				try
+				{
+					var Fader = new Fader();
+					console.log("Spawning with fader");
+				}
+				catch
+				{
+					console.log("Spawning with no fader");
+				}
+
+			</script>
     </head>
+
 	<body>
 		<header id="header">
 		</header>
@@ -63,7 +94,7 @@ Features this site should have
 					<h2>
 						PartyGeists
 					</h2>
-					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
+					<a>
 						<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" class="GameImage" alt="An image of my game named 'AllSeeing'">
 					</a>
 					<p>
@@ -78,7 +109,7 @@ Features this site should have
 					<h2>
 						Wordle Clone
 					</h2>
-					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
+					<a>
 						<img src="../../../Assets/Games/Static/WordleClone-Static.webp" class="GameImage" alt="An image of my game named 'AllSeeing'">
 					</a>
 					<p>
@@ -95,7 +126,7 @@ Features this site should have
 					<h2>
 						Posession Sim: The House With No Kitchen.
 					</h2>
-					<a onmouseover=OnHover(AllSeeing) onmouseleave=OnLeave(AllSeeing) onclick=OnClick(AllSeeing)>
+					<a>
 						<img src="../../../Assets/Games/Static/PartyGeists-Static.jpg" class="GameImage" alt="An image of my game named 'AllSeeing'">
 					</a>
 					<p>
@@ -223,7 +254,7 @@ Features this site should have
             </section>
 
 
-
+<!--
 				<section id="slideshow">
 					<h2>
 						I also do art!!
@@ -240,8 +271,12 @@ Features this site should have
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet posuere ligula, et finibus massa. Donec justo nisl, dignissim id finibus at, interdum in quam. Nunc ac ultricies ante. Curabitur imperdiet imperdiet arcu a facilisis.
 					</p>
 				</section>
-					<footer id="footer">
+
+-->
 			</main>
 		</div>
+
+		<footer id="footer">
+		</footer>
 	</body>
 </html>

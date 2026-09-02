@@ -38,14 +38,15 @@ TODO: some art changes
 		<!-- Style Classes -->
 
 		<link href="../../CSS/Objects/ProfessionalResume.css" rel="stylesheet">
+		<link href="../../CSS/Objects/AnimatedResume.css" rel="stylesheet">
 		<link href="../../CSS/Objects/ProfessionalHeader.css" rel="stylesheet">
 		<link href="../../CSS/Objects/ProfessionalFooter.css" rel="stylesheet">
+		<link href="../../CSS/Objects/StickyElements.css" rel="stylesheet">
 
 		<link href="../../CSS/Objects/StickyHeader.css" rel="stylesheet">
 		<link href="../../CSS/Objects/Slideshow.css" rel="stylesheet">
 
 		<!-- Classes/Objects -->
-		<script src="../../JavaScript/Objects/Fader.js"></script>
 		<script src="../../JavaScript/Objects/Header.js" type="module"></script>
 		<script src="../../JavaScript/Objects/Footer.js" type="module"></script>
 
@@ -62,20 +63,35 @@ TODO: some art changes
 
 	<!-- Startup functions that generate predetermined objects -->
 	<body>
-
-		<header id="header">
-		</header>
+		<script type='module'>
+			import ObjectFader from '../../JavaScript/Objects/ObjectFader.js'
+			try
+			{
+				let titleFade = ObjectFader.FadeOnly(document.getElementById('title'), 0, 100);
+				addEventListener('scroll', (event) => { titleFade.OnScroll() });
+			}
+			catch
+			{
+				console.log("Scrolling functionality is missing.");
+			}
+		</script>
+		<div id='top'>
+		</div>
+		<div id='stickyElements'>
+		</div>
+		<div id='header'>
+		</div>
 
         <main>
 
             <section id="resumeSection">
 
 				<div id="nyanileStopper">
-					<img src="../../../Assets/Art/nyanile.png" alt="An image of my fursona!" id="NyanileMain">
+					<img src="/Assets/Art/nyanile.png" alt="An image of my fursona!" id="NyanileMain">
 				</div>
                 <div id="resume" class="background">
 					<div id="mainInfo">
-						<img src="../../../Assets/Logos/FelithiamityLogo.webp" alt="My personal logo">
+						<img src="/Assets/Logos/FelithiamityLogo.webp" alt="My personal logo">
 						<h2>Hello, my name is Celeste!</h2>
 						<p>
 							I am a Canadian Computer Scientist with a passion in developing videogames. 
@@ -171,14 +187,6 @@ TODO: some art changes
 								A Zombie Survival Party Game!
 							</p>
 						</a>
-						<!--
-							<a href="../../../Assets/Documents/Resume.pdf">
-								<p>
-								Click here for an expanded version of my resume!
-								</p>
-							</a>
-						-->
-
                 	</div>
 				</div>
 
@@ -238,7 +246,7 @@ TODO: some art changes
 							clicking here! 
 						</a>
 					</p>
-					<form id="contactForm" action="mailto:felithiamity.maker130@passinbox.com" moethod="post" enctype"text/plain">
+					<form id="contactForm" action="mailto:felithiamity.maker130@passinbox.com" method="post">
 						<div>
 							<p>
 								Email:

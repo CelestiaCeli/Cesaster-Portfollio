@@ -1,52 +1,40 @@
-/*
-class Fader 
+const DEFAULT_HIGHFADE = 100;
+const DEFAULT_LOWFADE = 0;
+const DEFAULT_TIME = 5;
+const MILISECOND_AMPLIFIER = 100;
+
+export default class Fader 
 {
-
-	const DEFAULT_FADEIN = 100;
-	const DEFAULT_FADEOUT = 0;
-
-	constructor(_element, _fadeIn) 
+	constructor(_lowFade, _highFade, _time) 
 	{
-		this.fadeIn = _fadeIn;
-		this.element = _element;
+		this.SetFadeAmt(_lowFade, _highFade);
+		this.time = _time * MILISECOND_AMPLIFIER;
 	}
 
-	function JustifyOpacity(element, invert, lowFadeAmt, highFadeAmt)
+	static FadeOnly(_lowFade, _highFade)
 	{
-		console.log(element);
-		if (invert == true)
-		{
-			element.style.opacity = lowFadeAmt + "%";
-		}
-		else
-		{
-			element.style.opacity = highFadeAmt + "%";
-		}
+		return new Fader(_lowFade, _highFade, DEFAULT_TIME);
 	}
 
-	function SetFadeAmt()
+	static TimeOnly(_time)
 	{
-		this.lowFadeAmt = _lowFadeAmt;
-		this.highFadeAmt = _highFadeAmt;
+		return new Fader(DEFAULT_LOWFADE, DEFAULT_HIGHFADE, _time);
 	}
 
-	function GenerateFadeAnim(element)
+	FadeAction(fadeAmt) {}
+	FadeFinished() {}
+
+	SetFadeAmt(_lowFade, _highFade)
 	{
-		if (this.lowFadeAmt == null || highFadeAmt == null)
-		{
-			GenerateDefaultFadeAnim(element);
-		}
-		else
-		{
-			GenerateCustomFadeAnim(element);
-		}
+		this.lowFade = _lowFade;
+		this.highFade = _highFade;
 	}
 
-	function GenerateCustomFadeAnim(element)
+	GenerateFade()
 	{
 		var fadeInAnim = [ { opacity: lowFadeAmt + "%" }, { opacity: highFadeAmt + "%" } ];
 		var fadeOutAnim = [ { opacity: highFadeAmt + "%" }, { opacity: lowFadeAmt + "%" } ];
-		var titleFadeSpeed = { duration: 500, iterations: 1, complete: JustifyOpacity(element, switched), }
+		var titleFadeSpeed = { duration: this.time, iterations: 1, complete: FadeFinished(), }
 
 		if (fadeIn = true)
 		{
@@ -57,38 +45,4 @@ class Fader
 			return (fadeOutAnim, titleFadeSpeed);
 		}
 	}
-
-	function GenerateDefaultFadeAnim()
-	{
-		var fadeInAnim = [ { opacity: DEFAULT_FADEOUT + "%" }, { opacity: DEFAULT_FADEIN + "%" } ];
-		var fadeOutAnim = [ { opacity: DEFAULT_FADEIN + "%" }, { opacity: DEFAULT_FADEOUT + "%" } ];
-		var titleFadeSpeed = { duration: 500, iterations: 1, complete: JustifyOpacity(element, switched), }
-
-		if (fadeIn = true)
-		{
-			return (fadeInAnim, titleFadeSpeed);
-		}
-		else
-		{
-			return (fadeOutAnim, titleFadeSpeed);
-		}
-	}
-
-
-	function SetOpacity(_lowFadeAmt, _highFadeAmt)
-	{
-		lowFadeAmt = _lowFadeAmt;
-		highFadeAmt = _highFadeAmt;
-
-	}
-
-	function BeginAnimation(element)
-	{
-		element.animate(element);
-
-	}
-	
-
-
 }
-*/

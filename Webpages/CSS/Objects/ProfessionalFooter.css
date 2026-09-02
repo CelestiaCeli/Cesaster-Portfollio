@@ -2,15 +2,19 @@
 
 	#credits
 	{
-		display: flex;
+		display: grid;
 		flex-wrap: wrap;
 		align-items: center;
-		grid-template-columns: auto auto auto auto;
+		grid-template-columns: auto auto auto;
 		justify-content: center;
-		align-items: baseline;
 		margin-right: 6vw;
 		gap: 6%;
 		margin-left: 6vw;
+	}
+
+	.contextMenu h2
+	{
+		margin: 8%;
 	}
 
 	footer
@@ -30,7 +34,7 @@
 		{
 			display: flex;
 			margin-top: 1vw;
-			gap: 3vw;
+			gap: 1vw;
 			justify-content: center;
 		}
 
